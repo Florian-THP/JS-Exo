@@ -119,7 +119,7 @@ ordre();
 
 
 /* Fonctionnalité 8 : */
-  document.addEventListener("DOMContentLoaded", function() {
+function inverse() {
     let prevButton = document.querySelector(".btn-primary");
     let cardContainer = document.querySelector(".album .container .row");
     prevButton.addEventListener("click", function(event) {
@@ -131,7 +131,9 @@ ordre();
       let firstCard = cards[0];
       cardContainer.appendChild(firstCard);
     });
-  });
+};
+
+inverse();
   
 
 const logo = document.querySelector(".navbar-brand");
